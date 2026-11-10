@@ -12,11 +12,7 @@ SECRET_KEY = os.environ.get(
 
 DEBUG = os.environ.get('DEBUG', 'True') == 'True'
 
-ALLOWED_HOSTS = [
-    'localhost',
-    '127.0.0.1',
-    '.vercel.app',
-]
+ALLOWED_HOSTS = ['.vercel.app', '.now.sh', '127.0.0.1', 'localhost']
 
 # Applications
 INSTALLED_APPS = [
@@ -91,6 +87,7 @@ USE_TZ = True
 
 # Static files
 STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 # Email
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
