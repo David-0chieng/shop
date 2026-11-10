@@ -10,7 +10,7 @@ SECRET_KEY = os.environ.get(
     'local-development-key-change-before-deployment'
 )
 
-DEBUG = os.environ.get('DEBUG', 'True') == 'True'
+DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
 ALLOWED_HOSTS = ['.vercel.app', '.now.sh', '127.0.0.1', 'localhost']
 
